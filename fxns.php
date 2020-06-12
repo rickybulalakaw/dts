@@ -254,10 +254,16 @@ function close_track($id, $did, $trackid){
 
 // PAGE ELEMENT FUNCTIONS
 
+function agencyname(){
+    $agencyname = "AnyAgency"; // Edit this
+    echo $agencyname;
+}
+
 function display_header(){
-    echo "<p align='center'><a href='index.php'><img src='images/pms-logo.jpg' alt='pms logo' height='130' width='175' ></a><br />"
-        . "<b>Office of the President of the Philippines<br /> "
-            . "PRESIDENTIAL MANAGEMENT STAFF</b></p>";
+    echo "<p align='center'><b>";
+    agencyname();
+    echo  "</b></p>";
+    
 }
 
 function display_home()

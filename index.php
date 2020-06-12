@@ -26,7 +26,7 @@ $firstname = $_SESSION['firstname'];
 
 display_header();
 
-echo "<h1 align='center'>Document Tracking System v.2 </h1>";
+echo "<h1 align='center'>Document Tracking System</h1>";
 display_main();
 
 $checkrmsstaffactive = "select office.acronym from employeeoffice, office where office.id = employeeoffice.officeid and employeeoffice.employeeid = $id and employeeoffice.status = 'Active' and office.acronym = 'RMS'";
